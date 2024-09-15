@@ -4,6 +4,8 @@ import { defineConfig } from "astro/config";
 import vercel from "@astrojs/vercel/serverless";
 import AstroPWA from "@vite-pwa/astro";
 
+import sitemap from "@astrojs/sitemap";
+
 // https://astro.build/config
 export default defineConfig({
   output: "server",
@@ -43,6 +45,7 @@ export default defineConfig({
         type: "module",
       },
     }),
+    sitemap(),
   ],
   trailingSlash: "never",
 });
