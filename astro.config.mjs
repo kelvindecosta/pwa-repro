@@ -44,6 +44,9 @@ export default defineConfig({
         suppressWarnings: true,
         type: "module",
       },
+      experimental: {
+        directoryAndTrailingSlashHandler: true,
+      },
     }),
     sitemap(),
   ],
